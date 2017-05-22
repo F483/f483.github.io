@@ -1,0 +1,12 @@
+
+/* dont show archive */
+.navbar-right { display: none; }
+
+.float_left_wrap { float: left; margin-right: 10px; }
+
+/* text formatting */
+.fontsize_xxl { font-size: xx-large; }
+.fontsize_xl { font-size: x-large; }
+.text_right { text-align: right; }
+.text_left { text-align: left; }
+

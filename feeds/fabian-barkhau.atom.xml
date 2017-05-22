@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>F483 - Fabian Barkhau</title><link href="/" rel="alternate"></link><link href="/feeds/fabian-barkhau.atom.xml" rel="self"></link><id>/</id><updated>2014-02-10T00:00:00+01:00</updated><entry><title>Incremental backups with rsnapshot.</title><link href="/incremental-backups-with-rsnapshot.html" rel="alternate"></link><published>2014-02-10T00:00:00+01:00</published><updated>2014-02-10T00:00:00+01:00</updated><author><name>Fabian Barkhau</name></author><id>tag:None,2014-02-10:/incremental-backups-with-rsnapshot.html</id><summary type="html">&lt;p&gt;Easily create incremental backups with rsnapshot, rsync and cron.&lt;/p&gt;</summary><content type="html">&lt;h4&gt;What is rsnapshot?&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://www.rsnapshot.org/"&gt;rsnapshot&lt;/a&gt; is a simple unix command-line tool for 
+creating incremental backups. It is one of the tools you do not hear about much 
+because it just does its job and lets you move on. I keep relying on year after 
+year because it just works so well. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Available on almost every unix system and is likely already installed.&lt;/li&gt;
+&lt;li&gt;So small and lightweight that it works even on small NAS devices.&lt;/li&gt;
+&lt;li&gt;Takes only a few minutes to setup and just works.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;How does it work?&lt;/h4&gt;
+&lt;p&gt;As with all good unix command-line tools it does one job and does it well. Just 
+configure which paths to backup (they can be from other servers via ssh as 
+well), how many hourly/daily/weekly/monthly/yearly backups to keep.&lt;/p&gt;
+&lt;p&gt;As you would expect it will create differential incremental backups to save 
+space and rotate incremental backups from hourly to daily etc.&lt;/p&gt;
+&lt;p&gt;You can then use &lt;a href="https://en.wikipedia.org/wiki/Cron"&gt;cron&lt;/a&gt; to schedul when 
+they are created and use &lt;a href="https://en.wikipedia.org/wiki/Rsync"&gt;rsync&lt;/a&gt; to push 
+the backups to an offsite storage.&lt;/p&gt;</content><category term="incremental"></category><category term="backup"></category><category term="rsnapshot"></category><category term="rsync"></category><category term="cron"></category></entry></feed>
